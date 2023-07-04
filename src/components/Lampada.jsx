@@ -88,7 +88,7 @@ function Lampada() {
 	return (
 		<Fragment>
 			<div
-				className={`flex flex-col self-start ml-5 items-center ${
+				className={`flex flex-col justify-center items-center  ${
 					broken === null && "self-center ml-0"
 				}`}>
 				<p className={`${broken === null ? "" : "hidden"} font-bold`}>
@@ -113,7 +113,7 @@ function Lampada() {
 					<button
 						className={`rounded-full ${
 							state ? "bg-gray text-white" : "bg-blue text-black"
-						} ${broken ?? "bg-green mt-3"} px-6 py-2`}
+						} ${broken ?? "bg-green mt-3"} text-sm px-4 py-2 lg:text-lg`}
 						onClick={(e) => {
 							switchLamp();
 							reproduzirAudio("barulhoInterruptor");

@@ -14,8 +14,11 @@ module.exports = {
                 red: "#EF271B",
                 blue: "#00B4D8"
             },
-            rotate: {
-                '270': '270deg',
+            screens: {
+                sm: "320px",
+                md: "420px",
+                lg: "768px",
+                xl: "1024"
             }
         },
     },
